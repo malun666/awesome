@@ -5,4 +5,5 @@
   width: 300px;
   border-radius: 5px;
   background: radial-gradient(circle at var(--x) var(--y), lightblue, blue);
+  margin: 0 auto;
 }
