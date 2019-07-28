@@ -1,0 +1,26 @@
+.progress-bar {
+  height: 20px;
+  width: 600px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  border: 1px solid #cff;
+  margin: 50px auto;
+}
+
+.progress-bar .progress-val {
+  height: 20px;
+  width: 400px;
+  background: repeating-linear-gradient(45deg, #99CCFF 0px, #99CCFF 15px, #0099CC 15px, #0099CC 30px);
+  background-size: 42px 20px;
+  /* background-repeat: no-repeat */
+  animation: progress-striped 1s linear 0s infinite normal both;
+}
+@keyframes progress-striped {
+  from {
+    background-position: 42px 0px;
+  }
+  to {
+    background-position: 0px 0px;
+  }
+  
+}
