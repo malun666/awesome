@@ -1,0 +1,18 @@
+.grid-demo-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(3, 30px);
+  grid-gap: 20px 20px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+}
+$colors: #FFFFCC,#CCFFFF,#FFCCCC,#99CCCC,#FFCC99,#FFDCCC,#FF9999,#996699,#FFCCCC,#CC9999,#FFFFCC,#CCCC99;
+@for $i from 1 through 9 {
+  .grid-demo-1 div:nth-child(#{$i}) {
+    background-color: #{nth($colors, $i)};
+    color: blueviolet;
+  }
+}
